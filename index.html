@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Translator</title>
+</head>
+<body>
+    <section class="container">
+        <section class="select-languages">
+            <select id="language-from">
+                <option value="ar">Árabe</option>
+                <option value="de">Alemão</option>
+                <option value="bg">Búlgaro</option>
+                <option value="cs">Checo</option>
+                <option value="zh-tw">Chinês</option>
+                <option value="ko">Coreano</option>
+                <option value="da">Dinamarquês</option>
+                <option value="es">Espanhol</option>
+                <option value="fi">Finlandês</option>
+                <option value="fr">Francês</option>
+                <option value="el">Grego</option>
+                <option value="he">Hebraico</option>
+                <option value="hi">Hindi</option>
+                <option value="nl">Holandês</option>
+                <option value="hu">Húngaro</option>
+                <option value="id">Indonésio</option>
+                <option value="en-us">Inglês</option>
+                <option value="it">Italiano</option>
+                <option value="ja">Japonês</option>
+                <option value="no">Norueguês</option>
+                <option value="pl">Polonês</option>
+                <option value="pt-br">Português</option>
+                <option value="ro">Romeno</option>
+                <option value="ru">Russo</option>
+                <option value="sv">Sueco</option>
+                <option value="th">Tailandês</option>
+                <option value="tr">Turco</option>
+                <option value="uk">Ucraniano</option>
+                <option value="vi">Vietnamita</option>
+            </select>
+
+            <i class="fa-solid fa-arrow-right-arrow-left" id="replace-btn"></i>
+
+            <select id="language-to">
+                <option value="ar">Árabe</option>
+                <option value="de">Alemão</option>
+                <option value="bg">Búlgaro</option>
+                <option value="cs">Checo</option>
+                <option value="zh-tw">Chinês</option>
+                <option value="ko">Coreano</option>
+                <option value="da">Dinamarquês</option>
+                <option value="es">Espanhol</option>
+                <option value="fi">Finlandês</option>
+                <option value="fr">Francês</option>
+                <option value="el">Grego</option>
+                <option value="he">Hebraico</option>
+                <option value="hi">Hindi</option>
+                <option value="nl">Holandês</option>
+                <option value="hu">Húngaro</option>
+                <option value="id">Indonésio</option>
+                <option value="en-us">Inglês</option>
+                <option value="it">Italiano</option>
+                <option value="ja">Japonês</option>
+                <option value="no">Norueguês</option>
+                <option value="pl">Polonês</option>
+                <option value="pt-br">Português</option>
+                <option value="ro">Romeno</option>
+                <option value="ru">Russo</option>
+                <option value="sv">Sueco</option>
+                <option value="th">Tailandês</option>
+                <option value="tr">Turco</option>
+                <option value="uk">Ucraniano</option>
+                <option value="vi">Vietnamita</option>
+            </select>
+        </section>
+
+        <section class="text">
+            <textarea id="text-from" cols="30" rows="10" 
+            placeholder="Digite um texto a ser traduzido"></textarea>
+
+            <section class="text-to">
+                <p id="translation">
+                    Translation
+                </p>
+                <i class="fa-solid fa-copy" id="copy-btn"></i>
+            </section>
+        </section>
+
+        <button id="translate-btn">
+            Translate
+        </button>
+    </section>
+
+    <script src="https://kit.fontawesome.com/3954e72066.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    --blue: #0a224d;
+    --light-blue: #8eaee6;
+    --gray: #b1b1b1;
+    --dark-gray: #262626;
+    --main-font: 'Montserrat'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font),  sans-serif;
+}
+
+body {
+    background: url(assets/bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.select-languages {
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-languages select {
+    font-size: 1em;
+    width: 40%;
+    padding: 5px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+
+    cursor: pointer;
+}
+
+select::-webkit-scrollbar {
+    width: 0;
+}
+
+#replace-btn {
+    color: white;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 5px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#replace-btn:hover {
+    color: var(--blue);
+    background-color: white;
+}
+
+#text-from {
+    font-size: 1em;
+
+    width: 100%;
+    padding: 5px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+}
+
+.text-to {
+    color: black;
+    background-color: var(--gray);
+    font-size: 1em;
+
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+
+    position: relative;
+}
+
+.fa-copy {
+    color: #0a224d;
+    background-color: white;
+    font-size: 1.2em;
+
+    padding: 7px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: .5s;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-5px, -5px);
+}
+
+.fa-copy:hover {
+    color: white;
+    background-color: var(--blue);
+}
+
+#translate-btn {
+    color: white;
+    background-color: var(--blue);
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: (0px 0px 10px rgb(0, 0, 0, 0.4));
+
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 50%;
+    padding: 10px;
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+#translate-btn:hover {
+    color: var(--blue);
+    background-color: white;
+}
+
+@media (min-width: 600px) {
+    .container {
+        max-width: 600px;
+        margin: 20px auto 0 auto;
+    }
+
+    .select-languages  select {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    #replace-btn {
+        padding: 10px;
+    }
+
+    #translate-btn {
+        margin-top: 10px;
+    }
+}
