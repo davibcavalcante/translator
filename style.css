@@ -57,6 +57,7 @@ select::-webkit-scrollbar {
 
     border-radius: 50%;
     cursor: pointer;
+    transition: .5s;
 }
 
 #replace-btn:hover {
